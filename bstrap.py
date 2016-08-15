@@ -1,6 +1,7 @@
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
+app.config.from_object(__name__)
 
-@app.route('/')
+@app.route("/")
 def index():
-    return 'Hello World'
+    return render_template('home.html')
