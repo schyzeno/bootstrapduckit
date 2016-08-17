@@ -13,3 +13,11 @@ def grid():
 @app.route("/grid_typo")
 def grid_typo():
     return render_template('grid_typo.html')
+
+@app.route("/table")
+def table():
+    return render_template('table.html')
+
+@app.route("/form")
+def form():
+    return render_template('form.html')
